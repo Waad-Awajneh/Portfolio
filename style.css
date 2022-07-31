@@ -80,8 +80,16 @@ header {
 
 main {
   margin-top: 50px;
-  padding: 10px;
+  padding: 100px;
 }
+
+
+
+
+
+
+
+
 
 /* Site hero
 ---------------------------------------------------------------------------------------------------- */
@@ -443,6 +451,7 @@ main {
 
   .profile {
     overflow: scroll;
+   
   }
 
 
@@ -481,7 +490,7 @@ main {
 
 .sep2 {
   height: 6px;
-  width: 50px;
+  width: 70px;
   background: #f9c4b6;
   margin: 20px 0;
 }
@@ -582,7 +591,10 @@ main {
   height: 285px;
   float: right;
   margin-top: -300px;
+  border: #f3b9ab 1px solid;
+  border-color: -internal-light-dark(#f3b9ab, rgb(133, 133, 133));
 
+box-shadow: #555;
 }
 
 .gfield_label {
@@ -654,7 +666,7 @@ placeholder {
   font-size: 14px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #000;
+  color: #f3b9ab;
   font-family: 'FuturaPT-Medium';
   letter-spacing: 2px;
 }
