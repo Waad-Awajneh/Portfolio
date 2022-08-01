@@ -15,7 +15,8 @@
     <link href="assets/plugins/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="test_style.css">
 
 
 
@@ -23,107 +24,141 @@
 
 <body>
 
-    <header>
-
-        <nav class="nav-primary">
-            <ul class="main-menu">
-                <li class="menu-item"><a href="./index.html"> Home</a></li>
-                <li class="menu-item"><a href="./about.html"> About</a></li>
-                <li class="menu-item"><a href="./work.html"> Work</a></li>
-                <li class="menu-item"><a href="./contact.html"> contact</a></li>
-                <a class="facebook" href="https://www.facebook.com"><img src="./images/facebook.png" alt="" width="20px"
-                        height="20px"></a>
-                <a href="https://linkedin.com"><img src="./images/linkedin.png" alt="" width="20px" height="20px"></a>
-                <a href="https://www.githup.com"><img src="./images/github-sign.png" alt="" width="20px"
-                        height="20px"></a>
+    <!-- <nav class="nav-primary">
+        <ul class="main-menu">
+            <li class="menu-item"><a href="./index.html"> Home</a></li>
+            <li class="menu-item"><a href="./about.html"> About</a></li>
+            <li class="menu-item"><a href="./work.html"> Work</a></li>
+            <li class="menu-item"><a href="./contact.html"> contact</a></li>
+            <a class="facebook" href="https://www.facebook.com"><img src="./images/facebook.png" alt="" width="20px"
+                    height="20px"></a>
+            <a href="https://linkedin.com"><img src="./images/linkedin.png" alt="" width="20px" height="20px"></a>
+            <a href="https://www.githup.com"><img src="./images/github-sign.png" alt="" width="20px" height="20px"></a>
 
 
-            </ul>
+        </ul>
 
-        </nav>
-
-
-    </header>
-
-    <main>
-        <div id="contact" class="container About-main">
-            <h1>CONTACT</h1>
-            <div class="shadow-lg p-3 mb-5 bg-white rounded">
-                <div class="contact ">
-                    <h2 style="color: #D49EA2;">Let's Connect</h2>
-                    <form>
-                        <div class="gform_body gform-body">
-                            <ul class=" top_label form_sublabel_below description_below">
-                                <div class="row row-cols-2">
-                                    <div class="col contact_col">
-                                        <li class="gfield">
-                                            <label class="gfield_label" for="name">Name<span>*</span></label>
-                                            <div>
-                                                <input name="name" id="name" type="text" value="" placeholder="Name"
-                                                    required>
-                                            </div>
-                                        </li>
-                                        <li class="gfield">
-                                            <label class="gfield_label" for="Email">Email<span>
-                                                    *</span></label>
-                                            <div>
-                                                <input name="Email" id="Email" type="email" value="" placeholder="Email"
-                                                    required>
-                                            </div>
-                                        </li>
-                                        <li class="gfield">
-                                            <label class="gfield_label" for="Business">Business Name</label>
-                                            <div><input name="Business" id="Business" type="text" value=""
-                                                    placeholder="Business Name">
-                                            </div>
-                                        </li>
-
-                                        <li class="gfield">
-                                            <label class="gfield_label" for="Budget">Estimated Budget</label>
-                                            <div><input name="Budget" id="Budget" type="text" value=""
-                                                    placeholder="Estimated Budget"> </div>
-                                        </li>
-
-                                        <li class="gfield">
-
-                                            <label class="gfield_label" for="Timeline">Estimated Timeline</label>
-
-                                            <input name="Timeline" id="Timeline" type="text"
-                                                placeholder="Estimated Timeline">
-
-                                        </li>
-                                    </div>
-
-                                    <div class="col contact_col">
-                                        <textarea name="Description" id="Description" class="textarea"
-                                            placeholder="Project Description" required rows="10" cols="50"></textarea>
-
-                                    </div>
+    </nav> -->
 
 
-                                </div>
-                            </ul>
-
-
-
-
-                            <div class="form_footer">
-                                <input type="submit" id="submit_button" value="Submit">
-
-                            </div>
-                        </div>
-                    </form>
-
-
-
-                    <div class="contact-email">You can email me directly: <a
-                            href="mailto:waad.awajneh707@gmail.com">hello@WAAD.awajneh.com</a></div>
-
+    <div class="main-content">
+        <div class="container no-padding">
+            <div class="row contact_row">
+                <div class="col-md-3 l-contant">
+                    <!-- <div class="profile-pic">
+                        <div class="pic-bg"><img src="images/profile-avatar.png" class="img-responsive" alt="" /></div>
+                    </div> -->
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="./index.html"> Home</a></li>
+                            <li><a href="./about.html"> About</a></li>
+                            <li><a href="./work.html"> Work</a></li>
+                            <li><a href="./contact.html"> contact</a></li>
+                            <li><a href="#">Contact <i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </nav>
                 </div>
 
+
+
+                <div class="col-md-9 r-content">
+                    <div id="contact" class="container About-main">
+                        <h1>CONTACT</h1>
+                        <div class="shadow-lg p-3 mb-5 bg-white rounded">
+                            <div class="contact ">
+                                <!-- <h2 style="color: #D49EA2;">Let's Connect</h2> -->
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-5 l-contant">
+                                          <div class ="gfield">
+                                                    <label class="gfield_label" for="name">Name<span>*</span></label>
+                                                    <div>
+                                                        <input name="name" id="name" type="text" value=""
+                                                            placeholder="Name" required>
+                                                    </div>
+                                             
+                                                    <label class="gfield_label" for="Email">Email<span>
+                                                            *</span></label>
+                                                    <div>
+                                                        <input name="Email" id="Email" type="email" value=""
+                                                            placeholder="Email" required>
+                                                    </div>
+                                              
+                                                    <label class="gfield_label" for="Business">Business Name</label>
+                                                    <div><input name="Business" id="Business" type="text" value=""
+                                                            placeholder="Business Name">
+                                                    </div>
+                                              
+
+                                                
+                                                    <label class="gfield_label" for="Budget">Estimated
+                                                        Budget</label>
+                                                    <div><input name="Budget" id="Budget" type="text" value=""
+                                                            placeholder="Estimated Budget"> </div>
+                                               
+
+                                                
+
+                                                    <label class="gfield_label" for="Timeline">Estimated
+                                                        Timeline</label>
+<div>
+                                                    <input name="Timeline" id="Timeline" type="text"
+                                                        placeholder="Estimated Timeline">
+                                                    </div>
+                                                    </div>
+                                        </div>
+
+
+
+                                      
+
+                                        <div class="col-md-4 l-content">
+                                            <textarea name="Description" id="Description"
+                                                        placeholder="Project Description" required rows="10"
+                                                        cols="15"></textarea>
+                                           
+                                                  
+                                        </div>
+
+                                        
+                                    </div>
+
+
+
+                                 
+
+                                </form>
+                             
+                            </div>
+
+                           
+                            <div class="form_footer gform_submit_button_1">
+                                <input type="submit" id="submit_button" value="Submit">
+
+
+                            </div>
+
+
+                            <div class="contact-email">You can email me directly: <a
+                                    href="mailto:waad.awajneh707@gmail.com">hello@WAAD.awajneh.com</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
             </div>
+
+
         </div>
-    </main>
+
+
+    </div>
+ 
+
     <footer>
         <div class="sep_"></div>
         <p style="text-align: center;">Copyright &copy; Waad 2022 </p>

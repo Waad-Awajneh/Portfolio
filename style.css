@@ -276,7 +276,7 @@ main {
   height: 430px;
   border: 3px solid rgb(255, 234, 237);
   perspective: 1000px;
-  box-shadow: 10px 10px #c4c4c4;
+  /* box-shadow: 10px 10px #c4c4c4; */
 
 }
 
@@ -321,7 +321,7 @@ main {
 
 }
 
-.flip-card-back h4,
+.flip-card-back h5,
 .flip-card-back ul p {
   text-align: center;
   margin-top: 20%;
@@ -331,7 +331,7 @@ main {
 }
 
 .flip-card-front img {
-  margin-top: 20%;
+  margin: 10%;
   /* bottom: 50%; */
   width: 50%;
   height: 50%;
@@ -348,6 +348,8 @@ main {
   text-align: center;
   cursor: pointer;
   text-align: center;
+
+  
 }
 
 .project {
@@ -463,37 +465,6 @@ main {
   width: 100%;
 }
 
-.sep_ {
-  height: 3px;
-  width: 100%;
-  background: #f9c4b6;
-  margin: 20px 0;
-  text-align: center;
-}
-
-
-.sep {
-  height: 3px;
-  width: 100%;
-  background: #484848;
-  margin: 20px 0;
-  text-align: center;
-}
-
-.sep1 {
-  height: 3px;
-  width: 70px;
-  background: #f9c4b6;
-  margin: 20px 0;
-}
-
-.sep2 {
-  height: 6px;
-  width: 70px;
-  background: #f9c4b6;
-  margin: 20px 0;
-}
-
 
 .personal-info {
 
@@ -549,8 +520,8 @@ main {
 ------------------------------------------------------------ */
 
 .contact {
-  margin: 120px auto 150px;
-  width: 900px;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .contact h2 {
@@ -559,48 +530,51 @@ main {
 }
 
 
-.gfield {
-  width: 49%;
+.gfield  div{
+  
+  /* width: 49%; */
   border: 0;
   padding: 10px;
+  margin: 4px;
   font-size: 15px;
-  line-height: 15px !important;
-  margin-bottom: 15px;
+  /* line-height: 15px !important; */
+  /* margin-bottom: 15px; */
   text-transform: uppercase;
   text-align: left;
   color: #000;
   font-family: 'FuturaPT-Medium';
   letter-spacing: 3px;
   /* float: left; */
-  height: 35px;
+  /* height: 35px; */
 }
 
-.gfield textarea {
-  border: 1px solid pink;
-  width: 49%;
-  padding: 10px;
+#Description {
+  width: 100%;
+  /* padding: 10px; */
   font-size: 15px;
-  line-height: 15px !important;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+  /* line-height: 15px ; */
+  /* margin-bottom: 15zpx; */
+  /* text-transform: uppercase; */
   color: #000;
   font-family: 'FuturaPT-Medium';
   letter-spacing: 3px;
   text-align: left;
-  height: 285px;
+  /* height: 285px; */
   float: right;
-  margin-top: -300px;
-  border: #f3b9ab 1px solid;
-  border-color: -internal-light-dark(#f3b9ab, rgb(133, 133, 133));
+  /* margin-top: -300px; */
+  border: #605857 1px solid;
+  /* border-color: -internal-light-dark(#f3b9ab, rgb(133, 133, 133)); */
 
-box-shadow: #555;
+/* box-shadow: #555; */
 }
 
-.gfield_label {
+.gfield_label  {
   display: none;
+  
 }
 
-placeholder {
+.placeholder {
+  
   font-size: 14px;
   line-height: 15px;
   text-transform: uppercase;
@@ -617,6 +591,7 @@ placeholder {
   font-family: 'EB Garamond', serif;
   text-transform: uppercase;
   border: 0;
+  border-radius: 90%;
   font-size: 16px;
   letter-spacing: 3px;
   font-weight: 500;
@@ -624,36 +599,37 @@ placeholder {
   line-height: 19px;
   text-align: center;
   width: auto;
-  background: #fff;
+  background:#f3b9ab;
   margin: 10px;
 }
 
 
-.form_footer:before {
+.form_footer::before {
   content: "";
-  width: 40%;
+  width: 30%;
   display: inline-block;
   border-top: 1px solid #000;
-  margin-right: 25px;
+  margin-right: 2.5%;
   height: 5px;
 }
 
 .form_footer::after {
   content: "";
-  width: 40%;
+  width: 30%;
   display: inline-block;
   border-top: 1px solid #000;
-  margin-left: 25px;
+  margin-left: 2.5%;
   height: 5px;
 }
 
-#gform_wrapper_1 #gform_submit_button_1:hover {
+ .gform_submit_button_1:hover {
   opacity: .8;
+  color: #ededed;
 }
 
 
 .contact-email {
-  margin: 0px auto 100px;
+  margin: 0px;
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
@@ -663,6 +639,7 @@ placeholder {
 
 .contact-email a {
   font-size: 14px;
+  font-weight: 150px;
   line-height: 15px;
   text-transform: uppercase;
   color: #f3b9ab;
