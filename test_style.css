@@ -123,7 +123,7 @@ a:hover {
 }
 
 .hero-image {
-	background-image: linear-gradient(#ce6c6c, rgb(147, 93, 93),#ce6c6c), url("./images/hero.PNG");
+	/* background-image: linear-gradient(#ce6c6c, rgb(147, 93, 93),#8e6464), url("./images/hero.PNG"); */
 	height: 100hv;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -176,15 +176,26 @@ a:hover {
 }
 
 .profile-pic {
-	background: url(./images/waad.jpg) no-repeat;
+	 /* background: url(./images/bg.mp4) no-repeat; */
 	height: 266px;
 	position: relative;
 }
+/* 
+#background-video {
+	height: 266px;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 100;
+  } */
 
 .pic-bg {
-	/* background: url(./images/waad.jpg) no-repeat; */
-	width: 100px;
-	height: 100px;
+	background: url(./images/waad\(4\).jpg) no-repeat;
+	width: 150px;
+	height: 210px;
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -193,7 +204,6 @@ a:hover {
 	/* display: grid; */
 	margin: auto;
 	vertical-align: middle;
-	padding: 10px;
 	border-radius: 50%;
 }
 
@@ -215,8 +225,10 @@ a:hover {
 	/* background: -webkit-linear-gradient(top,  #9be6ff 0%,#ffd42d 100%); */
 	/* background: -o-linear-gradient(top,  #0695c5 0%,#2a363a 100%); */
 	/* background: -ms-linear-gradient(top,  #2c383c 0%,#2a363a 100%); */
-	background: linear-gradient(#fff 0%,#7F7F7F 100%);
+	background: linear-gradient(#fff 10%,#aa6e71 180%);
 	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c383c', endColorstr='#2a363a',GradientType=0 ); */
+
+
 }
 
 .navigation li:last-child {
@@ -233,18 +245,23 @@ a:hover {
 	position: relative;
 	text-decoration: none;
 	font-family: 'FuturaPT-Medium';
+	z-index: 10;
 }
 
 .navigation li a img {
 	font-size: 20px;
 	position: relative;
-	top: 1px;
-	margin-left: 15px;
+	/* top: px; */
+	margin-right:18px;
+	right:5px;
 	color: #7f7f7f;
+	width:100%;
+	z-index: 1;
 }
 
-.navigation li a:hover, .navigation li a:hover i {
-	color: #C07177 ;
+.navigation li a:hover, .navigation li a:hover img {
+	color: #0f0d0d ;
+	opacity: 0.7;
 }
 
 .navigation li:before {
@@ -256,6 +273,7 @@ a:hover {
 	right: 0px;
 	background: #C07177;
 	transition: all .3s ease-in-out;
+
 }
 
 .navigation li:hover:before  {
@@ -370,15 +388,16 @@ a:hover {
 
 
 
-.flip-card {
+/* .flip-card {
     background-color: white;
     width: 100%;
     height: 100%;
-    border: 3px solid rgb(255, 234, 237);
+    border: 5px double #E5E5E5;
     perspective: 1000px;
-    
+	border-radius: 20%;
+
   
-  }
+  } */
   
   .flip-card-inner {
     position: relative;
@@ -399,10 +418,9 @@ a:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
+  
     /* Safari */
-    backface-visibility: hidden;
-    border-radius: 40%;
+    border-radius: 20%;
     ;
   }
   
@@ -418,6 +436,7 @@ a:hover {
     background-color: white;
     color: #f3b9ab;
     transform: rotateY(180deg);
+	border-radius: 25%;
   
   }
   
@@ -438,16 +457,8 @@ a:hover {
   
   }
   
-  .flip-card-back a button {
-  
-    /* border: none;
-    display: inline-block;
-    color: black;
-    background-color: lightpink;
-    margin: 5px;
-    text-align: center;
-    cursor: pointer;
-    text-align: center; */
+  .flip-card-back a button,#download_submit_button{
+
 	display: inline-block;
 	color: #000;
 	font-family: 'EB Garamond', serif;
@@ -516,6 +527,14 @@ a:hover {
 }
  */
 
+ footer
+{
+	text-align: center;
+	
+}
+footer ul li a img {
+	margin:100px;
+}
 
 
 
@@ -544,8 +563,29 @@ a:hover {
 
 /* #Tablet (Portrait)
 ================================================== */
+@media only screen and (min-width: 959px) {
+	#per_s{
+		display:none ;
+	}
 
-/* Note: Design for a width of 768px */
+.container {
+	max-width: 760px;
+	width: 760px;
+	margin: 0 auto;
+}
+
+footer p {
+	color: #000;
+	font-size: 13px;
+}
+#Description{
+	width: 100%;
+}
+.navigation li a img {
+display: none;
+}
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	#per_s{
 		display:none ;
@@ -564,12 +604,14 @@ footer p {
 #Description{
 	width: 100%;
 }
+.navigation li a img {
+display: none;
+}
 }
 
 /*  #Mobile (Portrait)
 ================================================== */
 
-/* Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
 	#home{
 		display: none;
@@ -582,11 +624,11 @@ footer p {
 }
 
 .l-content {
-	background: #ded6d6;
+	/* background: #ded6d6; */
 	height: auto;
 	width: 100%;
 	padding: 0px;
-	display: grid;
+	/* display: grid; */
 }
 
 .r-content {
@@ -603,7 +645,7 @@ footer p {
 	font-size: 0px;
 }
 
-.navigation li a i {
+.navigation li a img {
 	font-size: 20px;
 	margin-left: 0px;
 	color: #d1d1d1;
@@ -611,6 +653,7 @@ footer p {
 
 .profile-pic {
 	background-size: 100% auto;
+	background-color: white;
 }
 
 .personal-info li em {
@@ -684,7 +727,6 @@ h1{
 /* #Mobile (Landscape)
 ================================================== */
 
-/* Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
 .container {
@@ -724,5 +766,16 @@ h1{
 	text-align: start;
 }
 
+
+
 }
 
+
+@media only screen and (max-width: 480px){
+
+
+.form_footer::after,
+.form_footer::before{
+	width: 18%;
+}
+}
