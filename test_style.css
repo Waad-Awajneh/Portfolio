@@ -5,13 +5,17 @@
 body, html {
 	height: 100%;
 	width: 100%;
+
 } 
 
  body {
 	background: #fff;
 	font-family: "FuturaPT-Medium","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:x-small;
-	/* transition: all 5s ease-in-out; */
+	/* background: url(./images/cloud.PNG) no-repeat;
+	z-index: 1000; */
+
+
 }
 h1{
 	text-align: center;
@@ -20,18 +24,17 @@ h1{
 
 h1, h2, h3, h4{
 	font-weight: 700;
-    /* color: #000; */
     font-family: 'FuturaPT-Medium';
     letter-spacing: 3px;
     text-transform: uppercase;
-    /* font-size: 29px; */
+ 
     line-height: 40px;
     font-style: normal;
 }
 
  h5, h6{
     font-weight: 500;
-    /* color: #000; */
+  
     font-family: 'FuturaPT-Medium';   
     text-transform:capitalize;
 }
@@ -73,37 +76,6 @@ a:hover {
 
 
 
-  .sep_ {
-	height: 3px;
-	width: 100%;
-	background: #f9c4b6;
-	margin: 20px 0;
-	text-align: center;
-  }
-  
-  
-  .sep {
-	height: 3px;
-	width: 100%;
-	background: #484848;
-	margin: 20px 0;
-	text-align: center;
-  }
-  
-  .sep1 {
-	height: 3px;
-	width: 200px;
-	background: #f9c4b6;
-	margin: 20px 0;
-  }
-  
-  .sep2 {
-	height: 6px;
-	width: 70px;
-	background: #f9c4b6;
-	margin: 20px 0;
-  }
-  
   
 
 
@@ -122,16 +94,7 @@ a:hover {
 	width: 72.3%;
 }
 
-.hero-image {
-	/* background-image: linear-gradient(#ce6c6c, rgb(147, 93, 93),#8e6464), url("./images/hero.PNG"); */
-	height: 100hv;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: relative;
-	opacity: 0.5;
-	z-index: 1;
-  }
+
   
   .hero-text {
 	text-align: center;
@@ -141,27 +104,6 @@ a:hover {
 	transform: translate(-50%, -50%);
 	color: white;
   }
-  
-  .hero-text a button  {
-	border: none;
-	outline: 0;
-	display: inline-block;
-	padding: 10px 25px;
-	color: black;
-	text-transform: capitalize;
-	background-color: #ddd;
-	text-align: center;
-	cursor: pointer;
-	}
-  
-  .hero-text a button:hover {
-	background-color: #555;
-	color: white;
-	cursor:grab;
-   
-  }
-  
-
 
 
 
@@ -202,7 +144,7 @@ a:hover {
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	/* display: grid; */
+	display: grid;
 	margin: auto;
 	vertical-align: middle;
 	border-radius: 50%;
@@ -215,6 +157,7 @@ a:hover {
 	 overflow: scroll;
  overflow: hidden;
 
+
 }
 
 
@@ -226,27 +169,17 @@ a:hover {
 }
 
 .navigation li {
-	list-style: none;
-}
-
-.navigation li {
-	/* border-bottom: 1px solid #7F7F7F; */
+	border-bottom: 1px none #7F7F7F;
 	position: relative;
 	list-style: none;
-	/* background: -moz-linear-gradient(top,  #196680 0%, #1783a6 100%); */
-	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2c383c), color-stop(100%,#2a363a)); */
-	/* background: -webkit-linear-gradient(top,  #9be6ff 0%,#ffd42d 100%); */
-	/* background: -o-linear-gradient(top,  #0695c5 0%,#2a363a 100%); */
-	/* background: -ms-linear-gradient(top,  #2c383c 0%,#2a363a 100%); */
 	background: linear-gradient(#fff 10%,#aa6e71 180%);
-	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c383c', endColorstr='#2a363a',GradientType=0 ); */
 
 
 }
 
-.navigation li:last-child {
+/* .navigation li:last-child {
 	border-bottom: none;
-}
+} */
 
 .navigation li a {
 	padding: 23.7px 25px;
@@ -264,7 +197,6 @@ a:hover {
 .navigation li a img {
 	font-size: 20px;
 	position: relative;
-	/* top: px; */
 	margin-right:18px;
 	right:5px;
 	color: #7f7f7f;
@@ -333,6 +265,7 @@ a:hover {
 	padding-top: 15px;
 	margin: 15px;
 
+
 }
 
 .personal-info h4 {
@@ -380,13 +313,7 @@ a:hover {
 	
 }
 
-/* .Education{
-	
-		border-top: 1px solid #ececec;
-		padding-top: 15px;
-		margin: 15px;
-	
-} */
+
 
 .Education h4 ,.Experince h4 , .Skills h4{
 	color: #2c383c;
@@ -400,29 +327,6 @@ a:hover {
 /* flip card  */
 
 
-
-
-
-/* .flip-card {
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    border: 5px double #E5E5E5;
-    perspective: 1000px;
-	border-radius: 20%;
-
-  
-  } */
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  
-  }
   
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
@@ -465,10 +369,10 @@ a:hover {
   }
   
   .flip-card-front img {
-    margin-top: 20%;
-    /* bottom: 50%; */
-    width: 50%;
-    height: 50%;
+    margin-top: 15%;
+    width: 70%;
+    height: 60%;
+	z-index: -1;
   
   }
   
@@ -489,8 +393,8 @@ a:hover {
 	width: auto;
 	background:#f3b9ab;
 	margin: 10px;
-	height: 10%;
-	width: 20%;
+	height: 30%;
+	width: 30%;
   }
   
   .portfolio-wrap {
@@ -546,17 +450,23 @@ a:hover {
 
  footer
 {
-justify-content: space-between;
-height: 5%;
-bottom: 0;
-text-align: center;
+	display: flex;
+
 
 }
-footer ul li a img {
+
+/* justify-content: space-between; */
+/* height: 5%; */
+/* bottom: 0; */
+/* text-align: center; */
+
+
+
+/* footer ul li a img {
 
 	margin:5px;
 	display:list-item
-}
+} */
 
 
 
@@ -606,13 +516,19 @@ footer p {
 .navigation li a img {
 display: none;
 }
+.navigation{
+	width: 300px;
+}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	#per_s{
 		display:none ;
 	}
-
+.navigation{
+	width: 300px;
+}
 .container {
 	max-width: 760px;
 	width: 760px;
@@ -701,25 +617,28 @@ display: none;
 article h3 {
 	margin: 15px 0 0;
 }
-
+/* 
 footer p {
-	font-size: 12px;
-	text-align: center;
-}
-
-.social {
+display: inline;
+width: 100%;
+font-size: 15px;
+font-weight: 500;z-index: -5;
+} */
+/* 
+.social  {
 	padding: 0px;
-	display: table;
+	display: flex;
 	float: none;
 	margin: 0 auto;
-}
+} */
 
 .flexslider {
 	min-height: auto;
+	
 }
 
 footer {
-	height: 100px;
+	/* height: 100px; */
 }
 
 .flip-card-back h5,
@@ -733,6 +652,10 @@ footer {
 }
 h1{
 	text-align: start;
+}
+
+.portfolio-wrap{
+	flex-wrap: wrap;
 }
 
 
@@ -759,16 +682,16 @@ h1{
 
 #portfolio .item  ,.flip-card-front,
   .flip-card-back{
-	display: block;
+	display: flex;
 	width: 50%;
 }
 
 #home,#hero-image,.hero-text{
 	display: none;
 }
-/* #fixedSideBar{
-	display: none;
-} */
+#fixedSideBar{
+	position:unset;
+}
 
 .flip-card-back h5,
 .flip-card-back ul p
@@ -783,7 +706,18 @@ h1{
 	text-align: start;
 }
 
+.portfolio-wrap{
+	flex-wrap: wrap;
+}
 
+.flip-card-back a button,#download_submit_button{
+	font-size: 10px;
+	font-weight: 100px;
+}
+
+.flip-card-back p ,.profile{
+	display: none;
+}
 
 }
 
@@ -795,6 +729,40 @@ h1{
 
 .form_footer::after,
 .form_footer::before{
-	width: 18%;
+	width: 10%;
 }
+
+#fixedSideBar{
+	position:unset;
+}
+
+.flip-card-back p ,.profile,.proj{
+	display: none;
+}
+
+.flip-card-back h4,
+.flip-card-back ul p{
+
+font-size: 15px;
+;
+
+}
+
+.portfolio{
+	flex-wrap: wrap;
+}
+
+footer p {
+	display: inline;
+	width: 100%;
+	font-size: 15px;
+	font-weight: 500;z-index: -5;
+	}
+
+	.flip-card-back a button,#download_submit_button{
+		font-size: 10px;
+		font-weight: 100px;
+	}
+
+
 }
