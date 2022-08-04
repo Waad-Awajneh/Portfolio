@@ -43,12 +43,6 @@
   
 
 
-  /* .main-heading  {
-    width: 1020px;
-    margin: 0px auto 180px;
-  } */
-
-
   .main-heading h1 {
     color: #000;
     font-family: 'EB Garamond', serif;
@@ -64,36 +58,11 @@
 
 
 
-/*-------------------------------------------- 
-                LOADING STYLES
----------------------------------------------- */
-
-#mask {
-	background-color: #FFF;
-	height: 100%;
-	position: fixed;
-	width: 100%;
-	z-index: 10000000000;
-	top: 0px;
-}
-
-.loader {
-	position: absolute;
-	width: 40px;
-	height: 40px;
-	margin: -20px 0 0 -20px;
-	top: 50%;
-	left: 50%;
-}
-
-
-  
-
 
 
 
   /*------------------------------------------------------------- 
-		          1. GLOBAL STYLES
+		         GLOBAL STYLES
 --------------------------------------------------------------- */
 
 body, html {
@@ -106,13 +75,7 @@ body, html {
 	background: #fff;
 	font-family: "FuturaPT-Medium","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:x-small;
-	/* background: url(./images/cloud.PNG) no-repeat;
-	z-index: 1000; */
 
-    /* -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out; */
 
 
 
@@ -179,7 +142,7 @@ a:hover {
 
 
 /*------------------------------------------------------------- 
-                 4. MAIN CONTENT - RIGHT CONTENT
+                  MAIN CONTENT - RIGHT CONTENT
 --------------------------------------------------------------- */
 
 .r-content {
@@ -188,17 +151,11 @@ a:hover {
 }
 
 #hero-image {
-    /* background-image: linear-gradient(rgba(168, 144, 144, 0.5), rgba(232, 222, 222, 0.5)), url("./images/cloud.PNG"); */
     height: 100%;
     width: 100%;
-    /* background-position: center; */
     background-repeat: no-repeat;
-    /* background-size: cover; */
     position: relative;
-  /* top:0;
-  right:0; */
     opacity: 1;
-    /* z-index: -1;; */
   } 
   
   
@@ -243,35 +200,7 @@ a:hover {
     animation-timing-function: steps(1, end);
   }
   
-  /* @keyframes job1 {
-  
-    0%,
-    50%,
-    100% {
-      width: 0;
-    }
-  
-    10%,
-    40% {
-      width: 400px;
-    }
-  }
-  
-  @keyframes caret {
-    0% {
-      opacity: 1;
-    }
-  
-    50% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
-  }
-  
-   */
+
   
   
 
@@ -281,7 +210,7 @@ a:hover {
 
 
 /*------------------------------------------------------------- 
-	          2. HEADER / NAV - LEFT CONTENT
+	         NAV - LEFT CONTENT
 --------------------------------------------------------------- */
 
 .l-content {
@@ -342,9 +271,7 @@ padding: 0px;
 	list-style: none;
 	 background:linear-gradient(#fff 10%,#aa6e71 180%); ;
    
-   /* #d5b7b9; */
  
-
 
 }
 
@@ -443,7 +370,7 @@ nav{
   .flip-card-front,
   .flip-card-back {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 70%;
     -webkit-backface-visibility: hidden;
     /* Safari */
@@ -458,7 +385,7 @@ nav{
     color: black;
   }
   
-  /* Style the back side */
+
   .flip-card-back {
     text-align: center;
     background-color: white;
@@ -501,9 +428,10 @@ nav{
 
 
 
-  
-/* Contact Forms
------------------------------------------------------------- */
+  /*------------------------------------------------------------- 
+	         Contact Forms
+--------------------------------------------------------------- */
+
 
 .contact {
     margin-top: 20px;
@@ -531,22 +459,14 @@ nav{
   
   #Description {
     width: 100%;
-    /* padding: 10px; */
     font-size: 15px;
-    /* line-height: 15px ; */
-    /* margin-bottom: 15zpx; */
-    /* text-transform: uppercase; */
     color: #000;
     font-family: 'FuturaPT-Medium';
     letter-spacing: 3px;
     text-align: left;
-    /* height: 285px; */
     float: right;
-    /* margin-top: -300px; */
+ 
     border: #605857 1px solid;
-    /* border-color: -internal-light-dark(#f3b9ab, rgb(133, 133, 133)); */
-  
-  /* box-shadow: #555; */
   }
   
   .gfield_label  {
@@ -566,7 +486,7 @@ nav{
   }
   
   
-  /* Submit */
+  
   #submit_button{
     color: #000;
     font-family: 'EB Garamond', serif;
@@ -630,7 +550,7 @@ nav{
 
 
   /*-------------------------------------------- 
-                 5. PROFILE
+                 About
 ---------------------------------------------- */
 
 
@@ -718,9 +638,10 @@ nav{
 
 
 
-/* ****************************88 */
-/* project */
-/* ************************** */
+  /*-------------------------------------------- 
+                 project
+---------------------------------------------- */
+
 
 .flip-card-back a button,#download_submit_button{
 
@@ -736,7 +657,6 @@ nav{
 	font-style: normal;
 	line-height: 19px;
 	text-align: center;
-	/* width: auto; */
 	background:#f3b9ab;
 	margin: 10px;
 	height: 20%;
@@ -787,7 +707,10 @@ nav{
 
 
 
-/* footer */
+  /*-------------------------------------------- 
+                 footer
+  ---------------------------------------------- */
+
 .socialMedia{
   display: flex;
   justify-content: space-between;
@@ -799,13 +722,6 @@ nav{
   
 }
 
-
-
-
-/* *********************************8 */
-/* responsive */
-
-
 .profile p{
 
   font-size:15px;
@@ -816,23 +732,10 @@ nav{
 }
 
 
-/* .Education ul li p{
-  font-size: 15px;
 
-}
-.Experince ul li p{
-  font-size: 15px;
-
-}
-.Skills ul li p{
-  font-size: 15px;
-
-}
-
- */
-
-
-
+  /*-------------------------------------------- 
+                 responsive
+  --------------------------------------------- */
 
 
 
@@ -916,15 +819,12 @@ display: none;
 .container {
 	max-width: 280px;
 	width: 280px;
-	/* margin: 0 auto; */
 }
 
 .l-content {
-	/* background: #ded6d6; */
 	height: auto;
 	width: 100%;
 	padding: 0px;
-	/* display: grid; */
 }
 
 .r-content {
@@ -975,20 +875,7 @@ display: none;
 article h3 {
 	margin: 15px 0 0;
 }
-/* 
-footer p {
-display: inline;
-width: 100%;
-font-size: 15px;
-font-weight: 500;z-index: -5;
-} */
-/* 
-.social  {
-	padding: 0px;
-	display: flex;
-	float: none;
-	margin: 0 auto;
-} */
+
 
 .flexslider {
 	min-height: auto;
@@ -1004,7 +891,7 @@ font-weight: 500;z-index: -5;
 .flip-card-back ul p
 .flip-card-back a button{
 
-	font-size:3px;
+	font-size:20px;
 	width: 20%;
 	height: 30%;
 	
@@ -1045,10 +932,9 @@ flex-wrap: nowrap;}
   
 }
 
-/* #portfolio .item  ,.flip-card-front, */
+
   .flip-card-back p ,.flip-card-back h5{
-	/* display: flex;
-	width: 50%; */
+
   font-size: 30%;
 
 }
@@ -1082,10 +968,6 @@ h1{
 	font-weight: 100px;
 }
 
-.flip-card-back p ,.profile{
-	/* display: none; */
-}
-
 
 
 .navigation {
@@ -1113,10 +995,6 @@ flex-wrap: nowrap;}
 
 #fixedSideBar{
 	position:unset;
-}
-
-.flip-card-back p ,.profile,.proj{
-	/* display: none; */
 }
 
 .flip-card-back h4,
@@ -1170,7 +1048,9 @@ flex-wrap: nowrap;}
 }
 
 
-
+/**********************************
+     Hero Text
+***********************************/     
 
 @keyframes job1 {
 
