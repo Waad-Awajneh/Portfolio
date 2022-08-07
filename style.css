@@ -468,25 +468,22 @@ z-index: -1;
   text-align: center;
   margin-bottom: 40px;
 }
-
+/* 
 
 .gfield  div{
-  
-  /* width: 49%; */
+
   border: 0;
   padding: 10px;
   margin: 4px;
   font-size: 15px;
-  /* line-height: 15px !important; */
-  /* margin-bottom: 15px; */
+
   text-transform: uppercase;
   text-align: left;
   color: #000;
   font-family: 'FuturaPT-Medium';
   letter-spacing: 3px;
-  /* float: left; */
-  /* height: 35px; */
-}
+
+} */
 
 #Description {
   width: 100%;
@@ -513,7 +510,7 @@ z-index: -1;
   
 }
 
-.placeholder {
+/* .placeholder {
   
   font-size: 14px;
   line-height: 15px;
@@ -522,7 +519,7 @@ z-index: -1;
   font-family: 'FuturaPT-Medium';
   letter-spacing: 3px;
   opacity: 1;
-}
+} */
 
 
 /* Submit */
@@ -585,4 +582,140 @@ z-index: -1;
   color: #f3b9ab;
   font-family: 'FuturaPT-Medium';
   letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.work .l-content{
+  width: 0%;
+}
+
+.folio-img {
+	position: relative;
+  text-align: center;
+}
+.folio-img img {
+
+  /* padding: 5%; */
+  /* width: 150%; */
+  height: 500px;
+  border: 3px solid #d7c4c4;
+  border-radius: 15%;
+
+  box-shadow: 10px 10px 9px 2px #e18e8e53;
+
+}
+.overlay {
+  border-radius: 15%;
+	background: #000;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.folio-img:hover .overlay {
+  visibility: visible;
+	opacity: .8;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.folio-img h5 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #f3b9ab;
+	margin-top: 20%;
+}
+
+.folio-img p {
+	font-size:1rem;
+	font-style: italic;
+	color: #f3b9ab;
+  margin-top: 15%;
+}
+
+
+.overlay_inner a button{
+
+	font-size: 1rem;
+	font-style: italic;
+  background-color: #f3b9ab;
+ width: 30%;
+ height: 30%;
+
+
+}
+.overlay-inner {
+	height: 37px;
+	position: absolute;
+	top: 50%;
+	margin: auto;
 }
